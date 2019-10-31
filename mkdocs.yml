@@ -1,0 +1,8 @@
+site_name: LennoLai Wiki
+nav:
+  - Home: index.md
+  - 类脑研究: Aurelien/about.md
+  - 区块链: Hermance/about.md
+  - 边缘计算: Lenno/about.md
+  - 分享区: share.md
+theme: readthedocs
