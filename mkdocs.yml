@@ -3,6 +3,14 @@ nav:
   - Home: index.md
   - 类脑研究: Aurelien/about.md
   - 区块链: Hermance/about.md
-  - 边缘计算: Lenno/about.md
+  - 边缘计算:
+    - 发展综述: Lenno/边缘计算发展历史与概况.md
+    - 论文整理: Lenno/边缘计算论文整理.md
   - 分享区: share.md
+use_directory_urls: false
+markdown_extensions: 
+  - meta
+  - toc
+  - tables
+  - fenced_code
 theme: readthedocs
