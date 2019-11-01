@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>论文整理 - Ecpkn2018 Wiki</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u8bba\u6587\u6574\u7406";
+    var mkdocs_page_input_path = "Lenno/\u8fb9\u7f18\u8ba1\u7b97\u8bba\u6587\u6574\u7406.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Ecpkn2018 Wiki</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../index.html">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../Aurelien/about.html">类脑研究</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../Hermance/about.html">区块链</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">边缘计算</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="边缘计算发展历史与概况.html">发展综述</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="边缘计算论文整理.html">论文整理</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#papers">边缘计算papers整理</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#_1">来源</a></li>
+        
+            <li><a class="toctree-l4" href="#_2">目录</a></li>
+        
+            <li><a class="toctree-l4" href="#_3">网络</a></li>
+        
+            <li><a class="toctree-l4" href="#_4">隔离技术</a></li>
+        
+            <li><a class="toctree-l4" href="#_5">体系结构</a></li>
+        
+            <li><a class="toctree-l4" href="#_6">边缘操作系统</a></li>
+        
+            <li><a class="toctree-l4" href="#_7">应用框架/云边协同框架等</a></li>
+        
+            <li><a class="toctree-l4" href="#_8">隐私和安全</a></li>
+        
+            <li><a class="toctree-l4" href="#_9">计算/任务  卸载/分配</a></li>
+        
+            <li><a class="toctree-l4" href="#ai">边缘AI</a></li>
+        
+            <li><a class="toctree-l4" href="#_10">其他</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../share.html">分享区</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Ecpkn2018 Wiki</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>边缘计算 &raquo;</li>
+        
+      
+    
+    <li>论文整理</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="papers">边缘计算papers整理</h1>
+<h2 id="_1">来源</h2>
+<ul>
+<li>CoRR资料库,2019</li>
+<li>CoRR资料库,2018</li>
+<li>3rd IEEE International Conference on Edge Computing, EDGE 2019, Milan, Italy, July 8-13, 2019. IEEE 2019, ISBN 978-1-7281-2708-8</li>
+<li>Fourth International Conference on Fog and Mobile Edge Computing, FMEC 2019, Rome, Italy, June 10-13, 2019. IEEE 2019, ISBN 978-1-7281-1796-6</li>
+<li>3rd IEEE International Conference on Fog and Edge Computing, ICFEC 2019, Larnaca, Cyprus, May 14-17, 2019. IEEE 2019, ISBN 978-1-7281-2365-3</li>
+<li>SEC, 2018</li>
+<li>3rd FMEC 2018: Barcelona, Spain </li>
+</ul>
+<h2 id="_2">目录</h2>
+<ul>
+<li><a href="#网络">网络</a></li>
+<li><a href="#隔离技术">隔离技术</a></li>
+<li><a href="#体系结构">体系结构</a></li>
+<li><a href="#边缘操作系统">边缘操作系统</a></li>
+<li><a href="#应用框架/云边协同框架等">应用框架/云边协同框架等</a></li>
+<li><a href="#隐私和安全">隐私和安全</a></li>
+<li><a href="#计算/任务%20%20卸载/分配">计算/任务  卸载/分配</a></li>
+<li><a href="#边缘AI">边缘AI</a></li>
+<li><a href="#其他">其他</a></li>
+</ul>
+<h2 id="_3">网络</h2>
+<ul>
+<li>
+<p><a href="papers/OpenStack%20extensions%20for%20QoS%20and%20energy%20efficiency%20in%20edge%20computing.pdf">A. Carrega, M. Repetto, G. Robino and G. Portomauro, "OpenStack extensions for QoS and energy efficiency in edge computing," 2018 Third International Conference on Fog and Mobile Edge Computing (FMEC), Barcelona, 2018, pp. 50-57.</a></p>
+</li>
+<li>
+<p><a href="papers/A%20Novel%20Pflua-based%20OpenFlow%20Implementation%20for%20VOSYSwitch.pdf">C. Mahmoudi, F. Mourlin and A. Battou, "Formal definition of edge computing: An emphasis on mobile cloud and IoT composition," 2018 Third International Conference on Fog and Mobile Edge Computing (FMEC), Barcelona, 2018, pp. 34-42.</a></p>
+</li>
+<li>
+<p><a href="papers/NeiMEC-Automatically%20Building%20Neighbor%20Relationship%20between%20Mobile%20Edge%20Platforms%20in%20Multi-access%20Edge%20Computing%20Environment%20.pdf">Y. Chen, C. Wang and J. Chen, "NeiMEC: Automatically building neighbor relationship between mobile edge platforms in multi-access edge computing environment," 2018 Third International Conference on Fog and Mobile Edge Computing (FMEC), Barcelona, 2018, pp. 20-25.</a></p>
+</li>
+<li>
+<p><a href="papers/How%20Edge%20Computing%20and%20Initial%20Congestion%20Window%20Affect%20Latency%20of%20Web-based%20Services-%20Early%20Experiences%20with%20Baidu?.pdf">Q. Zhang, H. Zhong, J. Wu and W. Shi, "How Edge Computing and Initial Congestion Window Affect Latency of Web-Based Services: Early Experiences with Baidu?," 2018 IEEE/ACM Symposium on Edge Computing (SEC), Seattle, WA, 2018, pp. 393-398.</a></p>
+</li>
+<li>
+<p><a href="papers/QoE%20Inference%20and%20Improvement%20Without%20End-Host%20Control.pdf">A. Nikravesh, Q. A. Chen, S. Haseley, X. Zhu, G. Challen and Z. M. Mao, "QoE Inference and Improvement Without End-Host Control," 2018 IEEE/ACM Symposium on Edge Computing (SEC), Seattle, WA, 2018, pp. 43-57.</a></p>
+</li>
+<li>
+<p><a href="papers/A%20Lightweight%20and%20Privacy-Preserving%20Authentication%20Protocol%20for%20Mobile%20Edge%20Computing.pdf">A Lightweight and Privacy-Preserving Authentication Protocol for Mobile Edge Computing</a></p>
+</li>
+<li>
+<p><a href="papers/Enhancing%20REST%20HTTP%20with%20Random%20Linear%20Network%20Coding%20in%20Dynamic%20Edge%20Computing%20Environments.pdf">Enhancing REST HTTP with Random Linear Network Coding in Dynamic Edge Computing Environments</a></p>
+</li>
+<li>
+<p><a href="papers/Dynamic%20Routing%20Using%20Precipitation%20Data.pdf">P. Kisters, D. Bade and J. Wulk, "Dynamic Routing Using Precipitation Data," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 312-317.</a></p>
+</li>
+<li>
+<p><a href="papers/Reinforcing%20Edge%20Computing%20with%20Multipath%20TCP%20Enabled%20Mobile%20Device%20Clouds.pdf">V. Balasubramanian, K. Kroep, K. C. Joshi and R. Venkatesha, "Reinforcing Edge Computing with Multipath TCP Enabled Mobile Device Clouds," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 283-288.</a></p>
+</li>
+<li>
+<p><a href="papers/Wildfire%20Detection%20using%20Wireless%20Mesh%20Network.pdf">G. Saldamli, S. Deshpande, K. Jawalekar, P. Gholap, L. Tawalbeh and L. Ertaul, "Wildfire Detection using Wireless Mesh Network," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 229-234.</a></p>
+</li>
+<li>
+<p><a href="papers/Network-Protocol-Based%20IoT%20Device%20Identification.pdf">N. Ammar, L. Noirie and S. Tixeuil, "Network-Protocol-Based IoT Device Identification," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 204-209.</a></p>
+</li>
+<li>
+<p><a href="papers/Autotree-%20Connecting%20Cheap%20IoT%20Nodes%20with%20an%20Auto-Configuring%20WiFi%20Tree%20Network%20.pdf">M. Gergeleit, "Autotree: Connecting Cheap IoT Nodes with an Auto-Configuring WiFi Tree Network," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 199-203.</a></p>
+</li>
+<li>
+<p><a href="papers/Distributed%20SDN%20controllers%20optimization%20for%20energy%20saving.pdf">T. F. Oliveira and L. F. Q. Silveria, "Distributed SDN controllers optimization for energy saving," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 86-89.</a></p>
+</li>
+<li>
+<p><a href="papers/Enabling%20Fog%20Computing%20using%20Self-Organizing%20Compute%20Nodes.pdf">V. Karagiannis, S. Schulte, J. Leitão and N. Preguiça, "Enabling Fog Computing using Self-Organizing Compute Nodes," 2019 IEEE 3rd International Conference on Fog and Edge Computing (ICFEC), Larnaca, Cyprus, 2019, pp. 1-10.</a></p>
+</li>
+<li>
+<p><a href="papers/Reducing%20Temporal%20Interference%20in%20Private%20Clouds%20through%20Real-Time%20Containers.pdf">T. Cucinotta, L. Abeni, M. Marinoni, A. Balsini and C. Vitucci, "Reducing Temporal Interference in Private Clouds through Real-Time Containers," 2019 IEEE International Conference on Edge Computing (EDGE), Milan, Italy, 2019, pp. 124-131.</a></p>
+</li>
+<li>
+<p><a href="papers/Enabling%20Multi-Source%20Coded%20Downloads.pdf">P. J. Braun, D. Malak, M. Médard and P. Ekler, "Enabling Multi-Source Coded Downloads," 2019 IEEE International Conference on Edge Computing (EDGE), Milan, Italy, 2019, pp. 21-23.</a></p>
+</li>
+<li>
+<p><a href="papers/Architectural%20Issues%20for%20Self-adaptive%20Service%20Migration%20Management%20in%20Mobile%20Edge%20Computing%20Scenarios.pdf">V. De Nitto Personè and V. Grassi, "Architectural Issues for Self-Adaptive Service Migration Management in Mobile Edge Computing Scenarios," 2019 IEEE International Conference on Edge Computing (EDGE), Milan, Italy, 2019, pp. 27-29.</a></p>
+</li>
+<li>
+<p><a href="papers/User-Uploaded%20Live%20Streams%20Driven%20by%20“First-Mile”%20Edge%20Decisions.pdf">J. Chen, B. Balasubramanian and Z. Huang, "Liv(e)-ing on the Edge: User-Uploaded Live Streams Driven by "First-Mile" Edge Decisions," 2019 IEEE International Conference on Edge Computing (EDGE), Milan, Italy, 2019, pp. 41-50.</a></p>
+</li>
+<li>
+<p>提出了一种新的视频流上传/下发架构</p>
+</li>
+<li>
+<p><a href="papers/An%20Integrated%20IoT%20enabled%20On-demand%20Grocery%20Shopping%20and%20Delivery%20Cloud%20System%20using%20MTComm%20at%20the%20Edge.pdf">S. M. N. A. Sunny, X. Liu and M. R. Shahriar, "An Integrated IoT Enabled On-Demand Grocery Shopping and Delivery Cloud System Using MTComm at the Edge," 2019 IEEE International Conference on Edge Computing (EDGE), Milan, Italy, 2019, pp. 51-55.</a></p>
+</li>
+<li>
+<p><a href="papers/An%20Integrated%20IoT%20enabled%20On-demand%20Grocery%20Shopping%20and%20Delivery%20Cloud%20System%20using%20MTComm%20at%20the%20Edge.pdf">B. Zhang and T. Kosar, "SMURF: Efficient and Scalable Metadata Access for Distributed Applications from Edge to the Cloud," 2019 IEEE International Conference on Edge Computing (EDGE), Milan, Italy, 2019, pp. 102-106.</a></p>
+</li>
+</ul>
+<h2 id="_4">隔离技术</h2>
+<h2 id="_5">体系结构</h2>
+<ul>
+<li>
+<p><a href="papers/Experimenting%20with%20a%20Fog-computing%20Architecture%20for%20Indoor%20Navigation.pdf">P. Battistoni, M. Sebillo and G. Vitiello, "Experimenting with a Fog-computing Architecture for Indoor Navigation," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 161-165.</a></p>
+</li>
+<li>
+<p><a href="papers/New%20Caching%20System%20Under%20Uncertainty%20for%20Mobile%20Edge%20Computing.pdf">M. Sarra, B. Samia, S. Khaled and D. Mehammed, "New Caching System Under Uncertainty for Mobile Edge Computing," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 129-134.</a></p>
+</li>
+</ul>
+<h2 id="_6">边缘操作系统</h2>
+<ul>
+<li><a href="papers/π-Edge-%20A%20Low-Power%20Edge%20Computing%20System%20for%20Real-Time%20Autonomous%20Driving%20Services.pdf">π-Edge: A Low-Power Edge Computing System for Real-Time Autonomous Driving Services</a></li>
+</ul>
+<h2 id="_7">应用框架/云边协同框架等</h2>
+<ul>
+<li>
+<p><a href="papers/An%20Architecture%20Pattern%20for%20Trusted%20Orchestration%20in%20IoT%20Edge%20Clouds.pdf">C. Pahl, N. E. Ioini, S. Helmer and B. Lee, "An architecture pattern for trusted orchestration in IoT edge clouds," 2018 Third International Conference on Fog and Mobile Edge Computing (FMEC), Barcelona, 2018, pp. 63-70.</a></p>
+</li>
+<li>
+<p><a href="papers/A%20Framework%20for%20Efficient%20and%20Secured%20Mobility%20of%20IoT%20Devices%20in%20Mobile%20Edge%20Computing.pdf">S. Almajali, H. B. Salameh, M. Ayyash and H. Elgala, "A framework for efficient and secured mobility of IoT devices in mobile edge computing," 2018 Third International Conference on Fog and Mobile Edge Computing (FMEC), Barcelona, 2018, pp. 58-62.</a></p>
+</li>
+<li>
+<p><a href="papers/F-MStorm-%20Feedback-based%20Online%20Distributed%20Mobile%20Stream%20Processing.pdf">M. Chao, C. Yang, Y. Zeng and R. Stoleru, "F-MStorm: Feedback-Based Online Distributed Mobile Stream Processing," 2018 IEEE/ACM Symposium on Edge Computing (SEC), Seattle, WA, 2018, pp. 273-285.</a></p>
+</li>
+<li>
+<p><a href="papers/Dependency%20Mining%20for%20Service%20Resilience%20at%20the%20Edge.pdf">A. Aral and I. Brandic, "Dependency Mining for Service Resilience at the Edge," 2018 IEEE/ACM Symposium on Edge Computing (SEC), Seattle, WA, 2018, pp. 228-242.</a></p>
+</li>
+<li>
+<p><a href="papers/Scalable%20Edge%20Computing%20for%20Low%20Latency%20Data%20Dissemination%20in%20Topic-based%20Publish:Subscribe.pdf">S. Khare et al., "Scalable Edge Computing for Low Latency Data Dissemination in Topic-Based Publish/Subscribe," 2018 IEEE/ACM Symposium on Edge Computing (SEC), Seattle, WA, 2018, pp. 214-227.</a></p>
+</li>
+<li>
+<p><a href="papers/Scalability%20and%20Performance%20Evaluation%20of%20Edge%20Cloud%20Systems%20for%20Latency%20Constrained%20Applications.pdf">S. Maheshwari, D. Raychaudhuri, I. Seskar and F. Bronzino, "Scalability and Performance Evaluation of Edge Cloud Systems for Latency Constrained Applications," 2018 IEEE/ACM Symposium on Edge Computing (SEC), Seattle, WA, 2018, pp. 286-299.</a></p>
+</li>
+<li>
+<p><a href="papers/IoTSim-Edge-%20A%20Simulation%20Framework%20for%20Modeling%20the%20Behaviour%20of%20IoT%20and%20Edge%20Computing%20Environments.pdf">IoTSim-Edge: A Simulation Framework for Modeling the Behaviour of IoT and Edge Computing Environments</a></p>
+</li>
+<li>
+<p><a href="papers/HyEdge-%20Optimal%20Request%20Scheduling%20in%20Hybrid%20Edge%20Computing%20Environment.pdf">HyEdge: Optimal Request Scheduling in Hybrid Edge Computing Environment</a></p>
+</li>
+<li>
+<p><a href="papers/Edge%20Computing-Enabled%20Cell-Free%20Massive%20MIMO%20Systems.pdf">Edge Computing-Enabled Cell-Free Massive MIMO Systems</a></p>
+</li>
+<li>
+<p><a href="https://ieeexplore.ieee.org/document/8795307">P. Battistoni, M. Sebillo and G. Vitiello, "Experimenting with a Fog-computing Architecture for Indoor Navigation," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 161-165.</a></p>
+</li>
+<li>
+<p><a href="papers/Coordinating%20Computation%20at%20the%20Edge-%20a%20Decentralized,%20Self-Organizing,%20Spatial%20Approach.pdf">R. Casadei and M. Viroli, "Coordinating Computation at the Edge: a Decentralized, Self-Organizing, Spatial Approach," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 60-67.</a></p>
+</li>
+<li>
+<p><a href="papers/Towards%20Analyzing%20the%20Performance%20of%20Hybrid%20Edge-Cloud%20Processing.pdf">D. Loghin, L. Ramapantulu and Y. M. Teo, "Towards Analyzing the Performance of Hybrid Edge-Cloud Processing," 2019 IEEE International Conference on Edge Computing (EDGE), Milan, Italy, 2019, pp. 87-94.</a></p>
+</li>
+<li>
+<p><a href="papers/A%20Programming%20Model%20for%20Reliable%20and%20Efficient%20Edge-Based%20Execution%20Under%20Resource%20Variability.pdf">Z. Song and E. Tilevich, "A Programming Model for Reliable and Efficient Edge-Based Execution under Resource Variability," 2019 IEEE International Conference on Edge Computing (EDGE), Milan, Italy, 2019, pp. 64-71.</a></p>
+</li>
+<li>
+<p><a href="papers/Optimal%20Placement%20of%20Stream%20Processing%20Operators%20in%20the%20Fog.pdf">T. Hiessl, V. Karagiannis, C. Hochreiner, S. Schulte and M. Nardelli, "Optimal Placement of Stream Processing Operators in the Fog," 2019 IEEE 3rd International Conference on Fog and Edge Computing (ICFEC), Larnaca, Cyprus, 2019, pp. 1-10.</a></p>
+</li>
+<li>
+<p><a href="papers/Self-Adaptive%20Healing%20for%20Containerized%20Cluster%20Architectures%20with%20Hidden%20Markov%20Models.pdf">A. Samir and C. Pahl, "Self-Adaptive Healing for Containerized Cluster Architectures with Hidden Markov Models," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 68-73.</a></p>
+</li>
+</ul>
+<h2 id="_8">隐私和安全</h2>
+<ul>
+<li>
+<p><a href="papers/Cache-Based%20Side-Channel%20Attacks%20Detection%20through%20Intel%20Cache%20Monitoring%20Technology%20and%20Hardware%20Performance%20Counters.pdf">M. Bazm, T. Sautereau, M. Lacoste, M. Sudholt and J. Menaud, "Cache-based side-channel attacks detection through Intel Cache Monitoring Technology and Hardware Performance Counters," 2018 Third International Conference on Fog and Mobile Edge Computing (FMEC), Barcelona, 2018, pp. 7-12.</a></p>
+</li>
+<li>
+<p><a href="papers/Secure%20Edge%20Computing%20in%20IoT%20Systems-%20Review%20and%20Case%20Studies.pdf">M. Alrowaily and Z. Lu, "Secure Edge Computing in IoT Systems: Review and Case Studies," 2018 IEEE/ACM Symposium on Edge Computing (SEC), Seattle, WA, 2018, pp. 440-444.</a></p>
+</li>
+<li>
+<p><a href="papers/Preliminary%20Study%20of%20Trusted%20Execution%20Environments%20on%20Heterogeneous%20Edge%20Platforms.pdf">Z. Ning, J. Liao, F. Zhang and W. Shi, "Preliminary Study of Trusted Execution Environments on Heterogeneous Edge Platforms," 2018 IEEE/ACM Symposium on Edge Computing (SEC), Seattle, WA, 2018, pp. 421-426.</a></p>
+</li>
+<li>
+<p><a href="papers/SafeShareRide-%20Edge-based%20Attack%20Detection%20in%20Ridesharing%20Services.pdf">L. Liu, X. Zhang, M. Qiao and W. Shi, "SafeShareRide: Edge-Based Attack Detection in Ridesharing Services," 2018 IEEE/ACM Symposium on Edge Computing (SEC), Seattle, WA, 2018, pp. 17-29.</a></p>
+</li>
+<li>
+<p><a href="papers/Security%20modeling%20and%20efficient%20computation%20offloading%20for%20service%20workflow%20in%20mobile%20edge%20computing.pdf">Security modeling and efficient computation offloading for service workflow in mobile edge computing</a></p>
+</li>
+<li>
+<p><a href="papers/Permissioned%20Blockchain%20for%20Efficient%20and%20Secure%20Resource%20Sharing%20in%20Vehicular%20Edge%20Computing.pdf">Permissioned Blockchain for Efficient and Secure Resource Sharing in Vehicular Edge Computing</a></p>
+</li>
+<li>
+<p><a href="papers/A%20Blockchain-enabled%20Trustless%20Crowd-Intelligence%20Ecosystem%20on%20Mobile%20Edge%20Computing.pdf">A Blockchain-enabled Trustless Crowd-Intelligence Ecosystem on Mobile Edge Computing</a></p>
+</li>
+<li>
+<p><a href="papers/Real%20Time%20Lateral%20Movement%20Detection%20based%20on%20Evidence%20Reasoning%20Network%20for%20Edge%20Computing%20Environment.pdf">Real Time Lateral Movement Detection based on Evidence Reasoning Network for Edge Computing Environment</a></p>
+</li>
+<li>
+<p><a href="papers/Authorizations%20in%20Cloud-Based%20Internet%20of%20Things-%20Current%20Trends%20and%20Use%20Cases%20.pdf">S. Bhatt, L. A. Tawalbeh, P. Chhetri and P. Bhatt, "Authorizations in Cloud-Based Internet of Things: Current Trends and Use Cases," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 241-246.</a></p>
+</li>
+<li>
+<p><a href="papers/Securing%20High-Velocity%20Data-%20Authentication%20and%20Key%20Management%20Model%20for%20Smart%20City%20Communication.pdf">M. M. Rathore, Y. Jararweh, M. Raheel and A. Paul, "Securing High-Velocity Data: Authentication and Key Management Model for Smart City Communication," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 181-188.</a></p>
+</li>
+<li>
+<p><a href="papers/ECC%20Based%20Lightweight%20Cybersecurity%20Solution%20For%20IoT%20Networks%20Utilising%20Multi-Access%20Mobile%20Edge%20Computing.pdf">E. Gyamfi, J. A. Ansere and L. Xu, "ECC Based Lightweight Cybersecurity Solution For IoT Networks Utilising Multi-Access Mobile Edge Computing," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 149-154.</a></p>
+</li>
+<li>
+<p><a href="https://ieeexplore.ieee.org/document/8795342">F. Buccafurri, G. Lax and A. Russo, "Exploiting Digital Identity for Mobility in Fog Computing," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 155-160.</a></p>
+</li>
+<li>
+<p><a href="https://ieeexplore.ieee.org/document/8795315">E. Gyamfi, J. A. Ansere and L. Xu, "ECC Based Lightweight Cybersecurity Solution For IoT Networks Utilising Multi-Access Mobile Edge Computing," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 149-154.</a></p>
+</li>
+<li>
+<p><a href="https://ieeexplore.ieee.org/document/8795354">M. Almiani et al., "Bluetooth Application-Layer Packet-Filtering For Blueborne Attack Defending," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 142-148.</a></p>
+</li>
+<li>
+<p><a href="papers/Securing%20Southbound%20Interface%20of%20HSDN-GRA%20Vehicular%20Routing%20Protocol%20using%20a%20Distributed%20Trust.pdf">L. Alouache, M. Maachaoui, M. Aliouat and R. Chelouah, "Securing Southbound Interface of HSDN-GRA Vehicular Routing Protocol using a Distributed Trust," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 90-97.</a></p>
+</li>
+<li>
+<p><a href="https://ieeexplore.ieee.org/document/8795319">J. Bassey, D. Adesina, X. Li, L. Qian, A. Aved and T. Kroecker, "Intrusion Detection for IoT Devices based on RF Fingerprinting using Deep Learning," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 98-104.</a></p>
+</li>
+<li>
+<p><a href="papers/Uncertainty-Aware%20Authentication%20Model%20for%20Fog%20Computing%20in%20IoT%20.pdf">M. Heydari, A. Mylonas, V. Katos, E. Balaguer-Ballester, V. H. F. Tafreshi and E. Benkhelifa, "Uncertainty-Aware Authentication Model for Fog Computing in IoT," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 52-59.</a></p>
+</li>
+<li>
+<p><a href="papers/Combining%20AntibIoTic%20with%20Fog%20Computing-%20AntibIoTic%202.0.pdf">M. De Donno and N. Dragoni, "Combining AntibIoTic with Fog Computing: AntibIoTic 2.0," 2019 IEEE 3rd International Conference on Fog and Edge Computing (ICFEC), Larnaca, Cyprus, 2019, pp. 1-6.</a></p>
+</li>
+<li>
+<p><a href="papers/Edge-based%20and%20privacy-preserving%20multi-modal%20monitoring%20of%20student%20engagement%20in%20online%20learning%20environments.pdf">D. Preuveneers and W. Joosen, "Edge-Based and Privacy-Preserving Multi-Modal Monitoring of Student Engagement in Online Learning Environments," 2019 IEEE International Conference on Edge Computing (EDGE), Milan, Italy, 2019, pp. 18-20.</a></p>
+</li>
+</ul>
+<h2 id="_9">计算/任务  卸载/分配</h2>
+<ul>
+<li>
+<p><a href="papers/Dynamic%20application%20deployment%20in%20federations%20of%20clouds%20and%20edge%20resources%20using%20a%20multiobjective%20optimization%20AI%20algorithm.pdf">R. G. Aryal and J. Altmann, "Dynamic application deployment in federations of clouds and edge resources using a multiobjective optimization AI algorithm," 2018 Third International Conference on Fog and Mobile Edge Computing (FMEC), Barcelona, 2018, pp. 147-154.</a></p>
+</li>
+<li>
+<p><a href="papers/A%20Game-Theoretic%20Approach%20to%20Coalition%20Formation%20in%20Fog%20Provider%20Federations.pdf">C. Anglano, M. Canonico, P. Castagno, M. Guazzone and M. Sereno, "A game-theoretic approach to coalition formation in fog provider federations," 2018 Third International Conference on Fog and Mobile Edge Computing (FMEC), Barcelona, 2018, pp. 123-130.</a></p>
+</li>
+<li>
+<p><a href="papers/Optimized%20load%20balancing%20by%20dynamic%20BBU-RRH%20mapping%20in%20C-RAN%20architecture.pdf">E. A. Ramos da Paixão, R. F. Vieira, W. V. Araújo and D. L. Cardoso, "Optimized load balancing by dynamic BBU-RRH mapping in C-RAN architecture," 2018 Third International Conference on Fog and Mobile Edge Computing (FMEC), Barcelona, 2018, pp. 100-104.</a></p>
+</li>
+<li>
+<p><a href="papers/Cooperative-Competitive%20Task%20Allocation%20in%20Edge%20Computing%20for%20Delay-Sensitive%20Social%20Sensing.pdf">D. Zhang, Y. Ma, C. Zheng, Y. Zhang, X. S. Hu and D. Wang, "Cooperative-Competitive Task Allocation in Edge Computing for Delay-Sensitive Social Sensing," 2018 IEEE/ACM Symposium on Edge Computing (SEC), Seattle, WA, 2018, pp. 243-259.</a></p>
+</li>
+<li>
+<p><a href="papers/In-situ%20Resource%20Provisioning%20with%20Adaptive%20Scale-out%20for%20Regional%20IoT%20Services.pdf">Y. Nakamura, T. Mizumoto, H. Suwa, Y. Arakawa, H. Yamaguchi and K. Yasumoto, "In-Situ Resource Provisioning with Adaptive Scale-out for Regional IoT Services," 2018 IEEE/ACM Symposium on Edge Computing (SEC), Seattle, WA, 2018, pp. 203-213.</a></p>
+</li>
+<li>
+<p><a href="papers/An%20Envy-Free%20Auction%20Mechanism%20for%20Resource%20Allocation%20in%20Edge%20Computing%20Systems.pdf">T. Bahreini, H. Badri and D. Grosu, "An Envy-Free Auction Mechanism for Resource Allocation in Edge Computing Systems," 2018 IEEE/ACM Symposium on Edge Computing (SEC), Seattle, WA, 2018, pp. 313-322.</a></p>
+</li>
+<li>
+<p><a href="papers/Energy-Efficient%20Resource%20Allocation%20for%20Secure%20NOMA-Enabled%20Mobile%20Edge%20Computing%20Networks.pdf">Energy-Efficient Resource Allocation for Secure NOMA-Enabled Mobile Edge Computing Networks</a></p>
+</li>
+<li>
+<p><a href="papers/Process%20migration-based%20computational%20offloading%20framework%20for%20IoT-supported%20mobile%20edge:cloud%20computing.pdf">Process migration-based computational offloading framework for IoT-supported mobile edge/cloud computing</a></p>
+</li>
+<li>
+<p>tag: int <a href="papers/Convergence%20of%20Edge%20Computing%20and%20Deep%20Learning-%20A%20Comprehensive%20Survey.pdf">Convergence of Edge Computing and Deep Learning: A Comprehensive Survey</a></p>
+</li>
+<li>
+<p><a href="papers/Optimal%20Energy%20Allocation%20and%20Task%20Offloading%20Policy%20for%20Wireless%20Powered%20Mobile%20Edge%20Computing%20Systems.pdf">Optimal Energy Allocation and Task Offloading Policy for Wireless Powered Mobile Edge Computing Systems</a></p>
+</li>
+<li>
+<p><a href="papers/Closed-Form%20Delay-Optimal%20Computation%20Offloading%20in%20Mobile%20Edge%20Computing%20Systems.pdf">Closed-Form Delay-Optimal Computation Offloading in Mobile Edge Computing Systems</a></p>
+</li>
+<li>
+<p><a href="papers/Service%20Placement%20with%20Provable%20Guarantees%20in%20Heterogeneous%20Edge%20Computing%20Systems.pdf">Service Placement with Provable Guarantees in Heterogeneous Edge Computing Systems</a></p>
+</li>
+<li>
+<p><a href="papers/Adaptive%20Resource%20Management%20for%20a%20Virtualized%20Computing%20Platform%20within%20Edge%20Computing.pdf">Adaptive Resource Management for a Virtualized Computing Platform within Edge Computing</a></p>
+</li>
+<li>
+<p><a href="papers/Joint%20Optimization%20of%20Service%20Caching%20Placement%20and%20Computation%20Offloading%20in%20Mobile%20Edge%20Computing%20System.pdf">Joint Optimization of Service Caching Placement and Computation Offloading in Mobile Edge Computing System</a></p>
+</li>
+<li>
+<p><a href="papers/Age%20Based%20Task%20Scheduling%20and%20Computation%20Offloading%20in%20Mobile-Edge%20Computing%20Systems.pdf">Age Based Task Scheduling and Computation Offloading in Mobile-Edge Computing Systems</a></p>
+</li>
+<li>
+<p><a href="papers/Learning-Based%20Priority%20Pricing%20for%20Job%20Offloading%20in%20Mobile%20Edge%20Computing.pdf">Learning-Based Priority Pricing for Job Offloading in Mobile Edge Computing</a></p>
+</li>
+<li>
+<p><a href="papers/Service%20Capacity%20Enhanced%20Task%20Offloading%20and%20Resource%20Allocation%20in%20Multi-Server%20Edge%20Computing%20Environment.pdf">Service Capacity Enhanced Task Offloading and Resource Allocation in Multi-Server Edge Computing Environment</a></p>
+</li>
+<li>
+<p><a href="papers/Energy-Efficient%20Edge-Facilitated%20Wireless%20Collaborative%20Computing%20using%20Map-Reduce.pdf">Energy-Efficient Edge-Facilitated Wireless Collaborative Computing using Map-Reduce</a></p>
+</li>
+<li>
+<p><a href="papers/Joint%20Task%20Assignment%20and%20Resource%20Allocation%20for%20D2D-Enabled%20Mobile-Edge%20Computing.pdf">Joint Task Assignment and Resource Allocation for D2D-Enabled Mobile-Edge Computing</a></p>
+</li>
+<li>
+<p><a href="papers/Optimal%20Resource%20Allocation%20for%20Wireless%20Powered%20Mobile%20Edge%20Computing%20with%20Dynamic%20Task%20Arrivals.pdf">Optimal Resource Allocation for Wireless Powered Mobile Edge Computing with Dynamic Task Arrivals</a></p>
+</li>
+<li>
+<p><a href="papers/HetMEC-%20Latency-optimal%20Task%20Assignment%20and%20Resource%20Allocation%20for%20Heterogeneous%20Mobile%20Edge%20Computing.pdf">HetMEC: Latency-optimal Task Assignment and Resource Allocation for Heterogeneous Mobile Edge Computing</a></p>
+</li>
+<li>
+<p><a href="papers/Adaptive%20Learning-Based%20Task%20Offloading%20for%20Vehicular%20Edge%20Computing%20Systems.pdf">Adaptive Learning-Based Task Offloading for Vehicular Edge Computing Systems</a></p>
+</li>
+<li>
+<p><a href="papers/The%20Advantage%20of%20Computation%20Offloading%20in%20Multi-Access%20Edge%20Computing.pdf">R. Singh, S. Armour, A. Khan, M. Sooriyabandara and G. Oikonomou, "The Advantage of Computation Offloading in Multi-Access Edge Computing," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 289-294.</a></p>
+</li>
+<li>
+<p><a href="papers/On%20the%20Fog-Cloud%20Cooperation-%20How%20Fog%20Computing%20can%20address%20latency%20concerns%20of%20IoT%20applications.pdf">A. Karamoozian, A. Hafid and E. M. Aboulhamid, "On the Fog-Cloud Cooperation: How Fog Computing can address latency concerns of IoT applications," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 166-172.</a></p>
+</li>
+<li>
+<p><a href="papers/On%20the%20Allocation%20of%20Computing%20Tasks%20under%20QoS%20Constraints%20in%20Hierarchical%20MEC%20Architectures.pdf">M. Berno, J. J. Alcaraz and M. Rossi, "On the Allocation of Computing Tasks under QoS Constraints in Hierarchical MEC Architectures," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 37-44.</a></p>
+</li>
+<li>
+<p><a href="papers/Cooperative%20Fog%20Communications%20using%20A%20MultiLevel%20Load%20Balancing.pdf">N. Mostafa, "Cooperative Fog Communications using A Multi-Level Load Balancing," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 45-51.</a></p>
+</li>
+<li>
+<p><a href="papers/Distributed%20Fair%20Randomized%20(DFR)-%20a%20Resource%20Sharing%20Protocol%20for%20Fog%20Providers.pdf">R. Beraldi and H. Alnuweiri, "Distributed Fair Randomized (DFR): a Resource Sharing Protocol for Fog Providers," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 29-36.</a></p>
+</li>
+<li>
+<p><a href="papers/Analyzing%20the%20Applicability%20of%20a%20Multi-Criteria%20Decision%20Method%20in%20Fog%20Computing%20Placement%20Problem.pdf">I. Lera, C. Guerrero and C. Juiz, "Analyzing the Applicability of a Multi-Criteria Decision Method in Fog Computing Placement Problem," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 13-20.</a></p>
+</li>
+<li>
+<p><a href="papers/Online%20User-driven%20Task%20Scheduling%20for%20FemtoClouds.pdf">C. Anglano, M. Canonico and M. Guazzone, "Online User-driven Task Scheduling for FemtoClouds," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 5-12.</a></p>
+</li>
+<li>
+<p><a href="papers/Machine%20Learning%20based%20Timeliness-Guaranteed%20and%20Energy-Efficient%20Task%20Assignment%20in%20Edge%20Computing%20Systems.pdf">T. Sen and H. Shen, "Machine Learning based Timeliness-Guaranteed and Energy-Efficient Task Assignment in Edge Computing Systems," 2019 IEEE 3rd International Conference on Fog and Edge Computing (ICFEC), Larnaca, Cyprus, 2019, pp. 1-10.</a></p>
+</li>
+<li>
+<p><a href="papers/ORCH-%20Distributed%20Orchestration%20Framework%20using%20Mobile%20Edge%20Devices.pdf">K. Toczé and S. Nadjm-Tehrani, "ORCH: Distributed Orchestration Framework using Mobile Edge Devices," 2019 IEEE 3rd International Conference on Fog and Edge Computing (ICFEC), Larnaca, Cyprus, 2019, pp. 1-10.</a></p>
+</li>
+<li>
+<p><a href="papers/Robust%20Resource%20Allocation%20Using%20Edge%20Computing%20for%20Vehicle%20to%20Infrastructure%20(V2I)%20Networks.pdf">A. Kovalenko, R. F. Hussain, O. Semiari and M. A. Salehi, "Robust Resource Allocation Using Edge Computing for Vehicle to Infrastructure (V2I) Networks," 2019 IEEE 3rd International Conference on Fog and Edge Computing (ICFEC), Larnaca, Cyprus, 2019, pp. 1-6.</a></p>
+</li>
+<li>
+<p><a href="papers/Edge-to-Edge%20Resource%20Discovery%20using%20Metadata%20Replication.pdf">I. Murturi, C. Avasalcai, C. Tsigkanos and S. Dustdar, "Edge-to-Edge Resource Discovery using Metadata Replication," 2019 IEEE 3rd International Conference on Fog and Edge Computing (ICFEC), Larnaca, Cyprus, 2019, pp. 1-6.</a></p>
+</li>
+<li>
+<p><a href="papers/Towards%20Context-Aware%20and%20Dynamic%20Management%20of%20Stream%20Processing%20Pipelines%20for%20Fog%20Computing.pdf">P. Wiener, P. Zehnder and D. Riemer, "Towards Context-Aware and Dynamic Management of Stream Processing Pipelines for Fog Computing," 2019 IEEE 3rd International Conference on Fog and Edge Computing (ICFEC), Larnaca, Cyprus, 2019, pp. 1-6.</a></p>
+</li>
+<li>
+<p><a href="papers/Decentralized%20Resource%20Auctioning%20for%20Latency-Sensitive%20Edge%20Computing.pdf">C. Avasalcai, C. Tsigkanos and S. Dustdar, "Decentralized Resource Auctioning for Latency-Sensitive Edge Computing," 2019 IEEE International Conference on Edge Computing (EDGE), Milan, Italy, 2019, pp. 72-76.</a></p>
+</li>
+<li>
+<p><a href="papers/Dynamic%20Edge%20Fabric%20environmenT.pdf">F. Jalali et al., "Dynamic Edge Fabric EnvironmenT: Seamless and Automatic Switching among Resources at the Edge of IoT Network and Cloud," 2019 IEEE International Conference on Edge Computing (EDGE), Milan, Italy, 2019, pp. 77-86.</a></p>
+</li>
+<li>
+<p><a href="papers/Mandrake-Implementing%20Durability%20for%20Edge%20Clouds.pdf">K. Carson, J. Thomason, R. Wolski, C. Krintz and M. Mock, "Mandrake: Implementing Durability for Edge Clouds," 2019 IEEE International Conference on Edge Computing (EDGE), Milan, Italy, 2019, pp. 95-101.</a></p>
+</li>
+<li>
+<p><a href="papers/Cloud-Assisted%20Model%20Predictive%20Control.pdf">P. Skarin, J. Eker, M. Kihl and K. Årzén, "Cloud-Assisted Model Predictive Control," 2019 IEEE International Conference on Edge Computing (EDGE), Milan, Italy, 2019, pp. 110-112.</a></p>
+</li>
+</ul>
+<h2 id="ai">边缘AI</h2>
+<ul>
+<li>
+<p><a href="papers/Bonsai%20in%20the%20Fog-%20an%20Active%20Learning%20Lab%20with%20Fog%20Computing.pdf">A. Brogi, S. Forti, A. Ibrahim and L. Rinaldi, "Bonsai in the Fog: An active learning lab with Fog computing," 2018 Third International Conference on Fog and Mobile Edge Computing (FMEC), Barcelona, 2018, pp. 79-86.</a></p>
+</li>
+<li>
+<p><a href="papers/Edge-based%20Discovery%20of%20Training%20Data%20for%20Machine%20Learning.pdf">Z. Feng, S. George, J. Harkes, P. Pillai, R. Klatzky and M. Satyanarayanan, "Edge-Based Discovery of Training Data for Machine Learning," 2018 IEEE/ACM Symposium on Edge Computing (SEC), Seattle, WA, 2018, pp. 145-158.</a></p>
+</li>
+<li>
+<p><a href="papers/Learning%20from%20Differentially%20Private%20Neural%20Activations%20with%20Edge%20Computing.pdf">Y. Mao, S. Yi, Q. Li, J. Feng, F. Xu and S. Zhong, "Learning from Differentially Private Neural Activations with Edge Computing," 2018 IEEE/ACM Symposium on Edge Computing (SEC), Seattle, WA, 2018, pp. 90-102.</a></p>
+</li>
+<li>
+<p><a href="papers/Federated%20Learning-based%20Computation%20Offloading%20Optimization%20in%20Edge%20Computing-supported%20Internet%20of%20Things.pdf">Federated Learning-based Computation Offloading Optimization in Edge Computing-supported Internet of Things</a></p>
+</li>
+<li>
+<p>tag: int <a href="papers/Adaptive%20Federated%20Learning%20in%20Resource%20Constrained%20Edge%20Computing%20Systems.pdf">S. Wang et al., "Adaptive Federated Learning in Resource Constrained Edge Computing Systems," in IEEE Journal on Selected Areas in Communications, vol. 37, no. 6, pp. 1205-1221, June 2019.</a></p>
+</li>
+<li>
+<p><a href="papers/In-Edge%20AI-%20Intelligentizing%20Mobile%20Edge%20Computing,%20Caching%20and%20Communication%20by%20Federated%20Learning.pdf">X. Wang, Y. Han, C. Wang, Q. Zhao, X. Chen and M. Chen, "In-Edge AI: Intelligentizing Mobile Edge Computing, Caching and Communication by Federated Learning," in IEEE Network, vol. 33, no. 5, pp. 156-165, Sept.-Oct. 2019.</a></p>
+</li>
+<li>
+<p><a href="papers/Edge%20AI-%20On-Demand%20Accelerating%20Deep%20Neural%20Network%20Inference%20via%20Edge%20Computing.pdf">Edge AI: On-Demand Accelerating Deep Neural Network Inference via Edge Computing</a></p>
+</li>
+<li>
+<p><a href="papers/EdgeCNN-%20Convolutional%20Neural%20Network%20Classification%20Model%20with%20small%20inputs%20for%20Edge%20Computing.pdf">EdgeCNN: Convolutional Neural Network Classification Model with small inputs for Edge Computing</a></p>
+</li>
+<li>
+<p><a href="papers/LabelSens-%20Enabling%20Real-time%20Sensor%20Data%20Labelling%20at%20the%20point%20of%20Collection%20on%20Edge%20Computing.pdf">LabelSens: Enabling Real-time Sensor Data Labelling at the point of Collection on Edge Computing</a></p>
+</li>
+<li>
+<p><a href="papers/F-Cooper-%20Feature%20based%20Cooperative%20Perception%20for%20Autonomous%20Vehicle%20Edge%20Computing%20System%20Using%203D%20Point%20Clouds.pdf">F-Cooper: Feature based Cooperative Perception for Autonomous Vehicle Edge Computing System Using 3D Point Clouds</a></p>
+</li>
+<li>
+<p><a href="papers/Edge%20Intelligence-%20the%20Confluence%20of%20Edge%20Computing%20and%20Artificial%20Intelligence.pdf">Edge Intelligence: the Confluence of Edge Computing and Artificial Intelligence</a></p>
+</li>
+<li>
+<p><a href="papers/A%20Deep%20Reinforcement%20Learning%20Approach%20to%20Multi-component%20Job%20Scheduling%20in%20Edge%20Computing.pdf">A Deep Reinforcement Learning Approach to Multi-component Job Scheduling in Edge Computing</a></p>
+</li>
+<li>
+<p><a href="papers/A%20Hardware-Efficient%20ADMM-Based%20SVM%20Training%20Algorithm%20for%20Edge%20Computing.pdf">A Hardware-Efficient ADMM-Based SVM Training Algorithm for Edge Computing</a></p>
+</li>
+<li>
+<p><a href="papers/Deep%20Learning%20for%20Hybrid%205G%20Services%20in%20Mobile%20Edge%20Computing%20Systems-%20Learn%20from%20a%20Digital%20Twin.pdf">Deep Learning for Hybrid 5G Services in Mobile Edge Computing Systems: Learn from a Digital Twin</a></p>
+</li>
+<li>
+<p><a href="papers/EdgeLens-%20Deep%20Learning%20based%20Object%20Detection%20in%20Integrated%20IoT,%20Fog%20and%20Cloud%20Computing%20Environments.pdf">EdgeLens: Deep Learning based Object Detection in Integrated IoT, Fog and Cloud Computing Environments</a></p>
+</li>
+</ul>
+<p>tag: int <a href="papers/Mobile%20Edge%20Computing,%20Blockchain%20and%20Reputation-based%20Crowdsourcing%20IoT%20Federated%20Learning-%20A%20Secure,%20Decentralized%20and%20Privacy-preserving%20System.pdf">Mobile Edge Computing, Blockchain and Reputation-based Crowdsourcing IoT Federated Learning: A Secure, Decentralized and Privacy-preserving System</a></p>
+<ul>
+<li>
+<p>tag:int <a href="papers/Active%20Learning%20Solution%20on%20Distributed%20Edge%20Computing.pdf">Active Learning Solution on Distributed Edge Computing</a></p>
+</li>
+<li>
+<p><a href="papers/Multi-user%20Resource%20Control%20with%20Deep%20Reinforcement%20Learning%20in%20IoT%20Edge%20Computing.pdf">Multi-user Resource Control with Deep Reinforcement Learning in IoT Edge Computing</a></p>
+</li>
+<li>
+<p><a href="papers/Mobile%20Edge%20Intelligence%20and%20Computing%20for%20the%20Internet%20of%20Vehicles.pdf">Mobile Edge Intelligence and Computing for the Internet of Vehicles</a></p>
+</li>
+<li>
+<p>tag:int <a href="papers/Edge%20Intelligence-%20Paving%20the%20Last%20Mile%20of%20Artificial%20Intelligence%20with%20Edge%20Computing.pdf">Edge Intelligence: Paving the Last Mile of Artificial Intelligence with Edge Computing</a></p>
+</li>
+<li>
+<p><a href="papers/Engineering%20a%20QoS%20Provider%20Mechanism%20for%20Edge%20Computing%20with%20Deep%20Reinforcement%20Learning.pdf">Engineering a QoS Provider Mechanism for Edge Computing with Deep Reinforcement Learning</a></p>
+</li>
+<li>
+<p>tag:int <a href="papers/Distributed%20Deep%20Learning%20Model%20for%20Intelligent%20Video%20Surveillance%20Systems%20with%20Edge%20Computing.pdf">Distributed Deep Learning Model for Intelligent Video Surveillance Systems with Edge Computing</a></p>
+</li>
+<li>
+<p><a href="papers/Real%20Time%20Lateral%20Movement%20Detection%20based%20on%20Evidence%20Reasoning%20Network%20for%20Edge%20Computing%20Environment.pdf">Real Time Lateral Movement Detection based on Evidence Reasoning Network for Edge Computing Environment</a></p>
+</li>
+<li>
+<p><a href="papers/Real-time%20Traffic%20Management%20Model%20using%20GPUenabled%20Edge%20Devices.pdf">M. M. Rathore, Y. Jararweh, H. Son and A. Paul, "Real-time Traffic Management Model using GPUenabled Edge Devices," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 336-343.</a></p>
+</li>
+<li>
+<p>tag:int <a href="papers/Co-optimizing%20Latency%20and%20Energy%20for%20IoT%20services%20using%20HMP%20servers%20in%20Fog%20Clusters.pdf">S. Shukla, D. Ghosal, K. Wu, A. Sim and M. Farrens, "Co-optimizing Latency and Energy for IoT services using HMP servers in Fog Clusters," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 121-128.</a></p>
+</li>
+<li>
+<p><a href="papers/Uncertainty-Aware%20Authentication%20Model%20for%20Fog%20Computing%20in%20IoT%20.pdf">M. Heydari, A. Mylonas, V. Katos, E. Balaguer-Ballester, V. H. F. Tafreshi and E. Benkhelifa, "Uncertainty-Aware Authentication Model for Fog Computing in IoT," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 52-59.</a></p>
+</li>
+<li>
+<p><a href="papers/Detecting%20and%20Predicting%20Anomalies%20for%20Edge%20Cluster%20Environments%20using%20Hidden%20Markov%20Models.pdf">A. Samir and C. Pahl, "Detecting and Predicting Anomalies for Edge Cluster Environments using Hidden Markov Models," 2019 Fourth International Conference on Fog and Mobile Edge Computing (FMEC), Rome, Italy, 2019, pp. 21-28.</a></p>
+</li>
+<li>
+<p><a href="papers/F-FDN-%20Federation%20of%20Fog%20Computing%20Systems%20for%20Low%20Latency%20Video%20Streaming.pdf">V. Veillon, C. Denninnart and M. A. Salehi, "F-FDN: Federation of Fog Computing Systems for Low Latency Video Streaming," 2019 IEEE 3rd International Conference on Fog and Edge Computing (ICFEC), Larnaca, Cyprus, 2019, pp. 1-9.</a></p>
+</li>
+<li>
+<p><a href="papers/Machine%20Learning%20based%20Timeliness-Guaranteed%20and%20Energy-Efficient%20Task%20Assignment%20in%20Edge%20Computing%20Systems.pdf">T. Sen and H. Shen, "Machine Learning based Timeliness-Guaranteed and Energy-Efficient Task Assignment in Edge Computing Systems," 2019 IEEE 3rd International Conference on Fog and Edge Computing (ICFEC), Larnaca, Cyprus, 2019, pp. 1-10.</a></p>
+</li>
+<li>
+<p><a href="papers/Efficient%20Deep%20Neural%20Networks%20for%20Edge%20Computing.pdf">M. Alnemari and N. Bagherzadeh, "Efficient Deep Neural Networks for Edge Computing," 2019 IEEE International Conference on Edge Computing (EDGE), Milan, Italy, 2019, pp. 1-7.</a></p>
+<ul>
+<li>motivation: 边缘场景下的DNNs的推理需要expansive computation and high storage cost</li>
+<li>
+<p>提出了filter pruning and Tensor Train Decomposition这两种方法来减轻推理时对算力和空间的要求</p>
+</li>
+<li>
+<p>conclusion: 减少了超过一个数量级的参数和推理时间</p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="papers/Multilayer%20Active%20Learning%20for%20Efficient%20Learning%20and%20Resource%20Usage%20in%20Distributed%20IoT%20Architectures.pdf">S. Nedelkoski, L. Thamsen, I. Verbitskiy and O. Kao, "Multilayer Active Learning for Efficient Learning and Resource Usage in Distributed IoT Architectures," 2019 IEEE International Conference on Edge Computing (EDGE), Milan, Italy, 2019, pp. 8-12.</a></p>
+<ul>
+<li>Motivation:<ul>
+<li>云端训练模型在物理上分布广泛的IoT时代不适用</li>
+<li>大量的数据不可能全部人力标注</li>
+<li>在医疗等应用下对模型的performance有高要求</li>
+<li>many edge devices are limited in their communication due the required energy for data transmissions</li>
+</ul>
+</li>
+<li>主要贡献:<ul>
+<li>在分布式IoT架构中使用主动学习</li>
+<li>提出了一种能解决资源和专家知识缺乏问题的多层的主动学习框架</li>
+<li>展示出了该方法在地理分布式IoT架构中对于分类和回归任务的可行性</li>
+<li>提出了在边缘场景下的主动学习中的selective sampling techniques</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="papers/Meet%20Genetic%20Algorithms%20in%20Monte%20Carlo-%20Optimised%20Placement%20of%20Multi-Service%20Applications%20in%20the%20Fog.pdf">A. Brogi, S. Forti, C. Guerrero and I. Lera, "Meet Genetic Algorithms in Monte Carlo: Optimised Placement of Multi-Service Applications in the Fog," 2019 IEEE International Conference on Edge Computing (EDGE), Milan, Italy, 2019, pp. 13-17.</a></p>
+<ul>
+<li>Motivation:<ul>
+<li>雾计算中几乎没有关于一次完成 多服务的多个应用部署的研究</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="papers/Edge-based%20and%20privacy-preserving%20multi-modal%20monitoring%20of%20student%20engagement%20in%20online%20learning%20environments.pdf">D. Preuveneers and W. Joosen, "Edge-Based and Privacy-Preserving Multi-Modal Monitoring of Student Engagement in Online Learning Environments," 2019 IEEE International Conference on Edge Computing (EDGE), Milan, Italy, 2019, pp. 18-20.</a></p>
+</li>
+<li>
+<p><a href="papers/Pushing%20Participatory%20Sensing%20Further%20to%20the%20Edge.pdf">Z. Song, J. Cheng, A. Chauhan and E. Tilevich, "Pushing Participatory Sensing Further to the Edge," 2019 IEEE International Conference on Edge Computing (EDGE), Milan, Italy, 2019, pp. 24-26.</a></p>
+<ul>
+<li>
+<p>Motivation</p>
+<ul>
+<li>在移动端提升大量数据的同时(视频、照片、音频等)，cloud-based不能完成Participatory sensing的任务</li>
+<li>主要原因是移动端能源不足和网络受限</li>
+</ul>
+</li>
+<li>
+<p>work</p>
+<ul>
+<li>提出了一种新的sensing架构, 基于室内的场景，not only to generate sensing results, but also to verify data, retrain machine learning models, and distribute incentive rewards</li>
+</ul>
+</li>
+<li>conclusion<ul>
+<li>在网络和能源受限的边缘室内场景视觉任务达到了很好的效果</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="papers/Pruning%20deep%20convolutional%20neural%20networks%20for%20efficient%20edge%20computing%20in%20condition%20assessment%20of%20infrastructures.pdf">Wu R-T, Singla A, Jahanshahi MR, Bertino E, Ko BJ, Verma D. Pruning deep convolutional neural networks for efficient edge computing in condition assessment of infrastructures. Comput Aided Civ Inf. 2019;34:774–789.</a></p>
+</li>
+<li>
+<p><a href="papers/Dynamic%20Edge%20Fabric%20environmenT.pdf">F. Jalali et al., "Dynamic Edge Fabric EnvironmenT: Seamless and Automatic Switching among Resources at the Edge of IoT Network and Cloud," 2019 IEEE International Conference on Edge Computing (EDGE), Milan, Italy, 2019, pp. 77-86.</a></p>
+</li>
+<li>
+<p><a href="papers/Vehicular%20Edge%20Computing%20via%20Deep%20Reinforcement%20Learning.pdf">Vehicular Edge Computing via Deep Reinforcement Learning</a></p>
+</li>
+</ul>
+<h2 id="_10">其他</h2>
+<ul>
+<li>
+<p><a href="papers/Remote%20Debugging%20for%20Containerized%20Applications%20in%20Edge%20Computing%20Environments.pdf">M. O. Ozcan, F. Odaci and I. Ari, "Remote Debugging for Containerized Applications in Edge Computing Environments," 2019 IEEE International Conference on Edge Computing (EDGE), Milan, Italy, 2019, pp. 30-32.</a></p>
+<ul>
+<li>极其工程</li>
+</ul>
+</li>
+<li>
+<p><a href="papers/The%20Seminal%20Role%20of%20Edge-Native%20Applications.pdf">M. Satyanarayanan, G. Klas, M. Silva and S. Mangiante, "The Seminal Role of Edge-Native Applications," 2019 IEEE International Conference on Edge Computing (EDGE), Milan, Italy, 2019, pp. 33-40.</a></p>
+<ul>
+<li>论证了边缘原生app的重要性</li>
+</ul>
+</li>
+<li>
+<p><a href="papers/Using%20Virtual%20Events%20for%20Edge-based%20Data%20Stream%20Reduction%20in%20Distributed%20Publish:Subscribe%20Systems.pdf">P. Zehnder, P. Wiener and D. Riemer, "Using Virtual Events for Edge-based Data Stream Reduction in Distributed Publish/Subscribe Systems," 2019 IEEE 3rd International Conference on Fog and Edge Computing (ICFEC), Larnaca, Cyprus, 2019, pp. 1-10.</a></p>
+</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../share.html" class="btn btn-neutral float-right" title="分享区">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="边缘计算发展历史与概况.html" class="btn btn-neutral" title="发展综述"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="边缘计算发展历史与概况.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../share.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
