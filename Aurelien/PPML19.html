@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>PPML19 - Ecpkn2018 Wiki</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "PPML19";
+    var mkdocs_page_input_path = "Aurelien/PPML19.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Ecpkn2018 Wiki</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../index.html">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">PPML</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="notion.html">基本概念</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="paper guide.html">论文总览</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../Hermance/about.html">区块链</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">边缘计算</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Lenno/边缘计算发展历史与概况.html">发展综述</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Lenno/边缘计算论文整理.html">论文整理</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../share.html">分享区</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Ecpkn2018 Wiki</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>PPML19</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h3 id="_1">范围</h3>
+<p>这个为期一天的研讨会着重于在分布式和集中式环境下，用于大规模数据分析中训练，推理和公开的隐私保护技术。 我们已经观察到机器学习社区对利用密码技术（例如多方计算（Multi-Party Computation，MPC）和同态加密（Homomorphic Encryption，HE））进行隐私保护训练和推理，以及使用差异化隐私（Differential Privacy，DP）进行公开的兴趣日益浓厚。 同时，系统安全和密码学界已经为ML提出了各种安全框架。 我们鼓励以理论为导向和面向应用程序的建议书，探讨各种方法，包括：
+- ML的安全多方计算技术
+- ML的同态加密技术
+- 实现隐私保护机器学习的基于硬件的方法
+- 集中式和分散式协议，用于学习加密数据
+- 差异性隐私：理论，应用和实现
+- 隐私的统计概念，包括差异性隐私的放宽（statistical notions of privacy including relaxations of differential privacy）
+- 不同隐私概念之间的经验和理论比较
+- 隐私与实用性之间的权衡</p>
+<h3 id="accepted-papers">ACCEPTED PAPERS</h3>
+<h4 id="garbled-neural-networks-are-practical">Garbled Neural Networks are Practical</h4>
+<p>Marshall Ball, Brent Carmer, Tal Malkin, Mike Rosulek and Nichole Schimanski.</p>
+<h4 id="efficient-secure-ridge-regression-from-randomized-gaussian-elimination">Efficient Secure Ridge Regression from Randomized Gaussian Elimination</h4>
+<p>Frank Blom, Niek J. Bouman, Berry Schoenmakers and Niels de Vreede.</p>
+<h4 id="quotient-secure-two-party-neural-network-training-and-prediction-via-oblivious-transfer">QUOTIENT: Secure Two-Party Neural Network Training and Prediction via Oblivious Transfer</h4>
+<p>Nitin Agrawal, Ali Shahin Shamsabadi, Matthew Kusner and Adrià Gascón.</p>
+<h4 id="the-audio-auditor-participant-level-membership-inference-in-internet-of-things-voice-services">The Audio Auditor: Participant-Level Membership Inference in Internet of Things Voice Services</h4>
+<p>Yuantian Miao, Ben Zi Hao Zhao, Minhui Xue, Chen Chao, Lei Pan, Jun Zhang, Dali Kaafar and Yang Xiang.</p>
+<h4 id="on-inferring-training-data-attributes-in-machine-learning-models">On Inferring Training Data Attributes in Machine Learning Models</h4>
+<p>Benjamin Zi Hao Zhao, Hassan Jameel Asghar, Raghav Bhaskar and Mohamed Ali Kaafar.</p>
+<h4 id="astra-high-throughput-3pc-over-rings-with-application-to-secure-prediction">ASTRA: High Throughput 3PC over Rings with Application to Secure Prediction</h4>
+<p>Harsh Chaudhari, Ashish Choudhury, Arpita Patra and Ajith Suresh.</p>
+<h4 id="learning-rate-adaptation-for-federated-and-differentially-private-learning">Learning Rate Adaptation for Federated and Differentially Private Learning</h4>
+<p>Antti Koskela and Antti Honkela.</p>
+<h4 id="automatic-discovery-of-privacy-utility-pareto-fronts">Automatic Discovery of Privacy-Utility Pareto Fronts</h4>
+<p>Brendan Avent, Javier Gonzalez, Tom Diethe, Andrei Paleyes and Borja Balle.</p>
+<h4 id="optimal-obfuscation-mechanisms-via-machine-learning-and-applications-to-location-privacy">Optimal Obfuscation Mechanisms via Machine Learning and Applications to Location Privacy</h4>
+<p>Marco Romanelli, Konstantinos Chatzikokolakis and Catuscia Palamidessi.</p>
+<h4 id="secure-parallel-computation-on-national-scale-volumes-of-data">Secure parallel computation on national scale volumes of data</h4>
+<p>Sahar Mazloom, Le Phi Hung, Samuel Ranellucci and S. Dov Gordon.</p>
+<h4 id="a-practical-approach-to-the-secure-computation-of-the-moore-penrose-pseudoinverse-over-the-rationals">A Practical Approach to the Secure Computation of the Moore-Penrose Pseudoinverse over the Rationals</h4>
+<p>Niek J. Bouman and Niels de Vreede.</p>
+<h4 id="private-protocols-for-u-statistics-in-the-local-model-and-beyond">Private Protocols for $U$-statistics in the Local Model and Beyond</h4>
+<p>James Bell, Aurélien Bellet, Adria Gascon and Tejas Kulkarni.</p>
+<h4 id="fast-secure-comparison-for-medium-sized-integers-and-its-application-in-binarized-neural-networks">Fast Secure Comparison for Medium-Sized Integers and Its Application in Binarized Neural Networks</h4>
+<p>Mark Abspoel, Niek J. Bouman, Berry Schoenmakers and Niels de Vreede.</p>
+<h4 id="secret-sharing-based-private-text-classification">Secret Sharing based Private Text Classification</h4>
+<p>Devin Reich, Ariel Todoki, Rafael Dowsley, Martine De Cock and Anderson Nascimento.</p>
+<h4 id="differentially-private-data-sharing-sharing-models-versus-sharing-data">Differentially Private Data Sharing: Sharing Models versus Sharing Data</h4>
+<p>Qingrong Chen, Chong Xiang, Minhui Xue, Bo Li, Nikita Borisov, Dali Kaafar and Haojin Zhu.</p>
+<h4 id="computing-exact-guarantees-for-differential-privacy">Computing Exact Guarantees for Differential Privacy</h4>
+<p>Antti Koskela, Joonas Jälkö and Antti Honkela.</p>
+<h4 id="a-verification-framework-for-secure-machine-learning">A verification framework for secure machine learning</h4>
+<p>Prasad Naldurg and Karthikeyan Bhargavan.</p>
+<h4 id="privacy-preserving-coupling-of-vertically-partitioned-databases-and-subsequent-training-with-gradient-descent">Privacy-Preserving Coupling of Vertically-Partitioned Databases and Subsequent Training with Gradient Descent</h4>
+<p>Thijs Veugen, Bart Kamphorst, Marie Beth van Egmond and Natasja van de L'Isle.</p>
+<h4 id="privacy-preserving-speech-processing-via-stpc-and-tees">Privacy-Preserving Speech Processing via STPC and TEEs</h4>
+<p>Sebastian P. Bayerl, Ferdinand Brasser, Christoph Busch, Tommaso Frassetto, Patrick Jauernig, Jascha Kolberg, Andreas Nautsch, Korbinian Riedhammer, Ahmad-Reza Sadeghi, Thomas Schneider, Emmanuel Stapf, Amos Treiber and Christian Weinert.</p>
+<h4 id="emotionless-privacy-preserving-speech-analysis-for-voice-assistants">Emotionless: Privacy-Preserving Speech Analysis for Voice Assistants</h4>
+<p>Ranya Aloufi, Hamed Haddadi and David Boyle.</p>
+<h4 id="robust-secure-aggregation-for-privacy-preserving-federated-learning-with-adversaries">Robust Secure Aggregation for Privacy-Preserving Federated Learning with Adversaries</h4>
+<p>Lukas Burkhalter, Alexander Viand, Anwar Hithnawi and Hossein Shafagh.</p>
+<h4 id="secure-evaluation-of-quantized-neural-networks">Secure Evaluation of Quantized Neural Networks</h4>
+<p>Anders Dalskov, Daniel Escudero and Marcel Keller.</p>
+<h4 id="disparate-vulnerability-on-the-unfairness-of-privacy-attacks-against-machine-learning">Disparate Vulnerability: on the Unfairness of Privacy Attacks Against Machine Learning</h4>
+<p>Mohammad Yaghini, Bogdan Kulynych and Carmela Troncoso.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
