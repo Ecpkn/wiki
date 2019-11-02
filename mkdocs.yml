@@ -1,7 +1,9 @@
 site_name: Ecpkn2018 Wiki
 nav:
   - Home: index.md
-  - 类脑研究: Aurelien/about.md
+  - PPML:  
+    - 基本概念: Aurelien/notion.md
+    - 论文总览: Aurelien/paper guide.md
   - 区块链: Hermance/about.md
   - 边缘计算:
     - 发展综述: Lenno/边缘计算发展历史与概况.md
