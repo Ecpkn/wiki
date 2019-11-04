@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>论文整理 - Ecpkn2018 Wiki</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u8bba\u6587\u6574\u7406";
+    var mkdocs_page_input_path = "Hermance\\note\\\u5df2\u8bfb\u8bba\u6587.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../index.html" class="icon icon-home"> Ecpkn2018 Wiki</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../index.html">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">PPML</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../Aurelien/notion.html">基本概念</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../Aurelien/paper guide.html">论文总览</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">区块链</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../whitepaper.html">白皮书</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../protocols.html">算法整理</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../papers.html">论文整理</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">边缘计算</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../Lenno/边缘计算发展历史与概况.html">发展综述</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../Lenno/边缘计算论文整理.html">论文整理</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../share.html">分享区</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">Ecpkn2018 Wiki</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>论文整理</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="_1">论文整理</h1>
+<h2 id="_2">区块链</h2>
+<p><strong>[2019] Monoxide: Scale out Blockchains with Asynchronous Consensus Zones</strong><br />
+在保持系统安全性和去中心化程度的同时，提高系统吞吐量，从而提高可用性和扩展性（scalability）
+* asynchronous consensus zones
+    异步共识分区，建立多个swarms，各区区内事务互相独立，跨区事务仅发送给目标区
+* cross-zone atomicity
+    保证最终一致性，BASE（牺牲一定的一致性，换取更高的可用性）
+* effective mining power amplification
+    <em>Chu-ku-no Mining</em>，鼓励矿工在不同的区，用同一个pow计算结果创建区块 </p>
+<hr />
+<p><strong>[2018] OmniLedger: A Secure, Scale-Out, Decentralized Ledger via Sharding</strong><br />
+<img alt="现存sharding优缺点" src="imgs/omni1.png" /><br />
+关键设计点：
+* 定期选择具有统计代表性的验证器组；
+* shard定期重组，以降低被破坏的可能性；- <em>RandHound</em>
+* 拜占庭共识协议，ByzCoinX
+* Atomix：两阶段客户端驱动协议，保证处理跨碎片事务的原子性 commit/abort atomically
+* distributed checkpoint principle - state blocks
+* 降低延迟：trust-but-verify验证，两层结构，第一层快速处理事务，第二层验证第一层事务的正确性。客户根据交易面额选择是否等待第二层处理完毕</p>
+<hr />
+<p><strong>[2016] A Secure Sharding Protocol For Open Blockchains</strong><br />
+比特币采取的pow共识机制，TPS仅有7，需要对系统吞吐量进行扩展。
+传统拜占庭协议应用于非许可型区块链的局限：开放环境不存在预先建立的身份和公钥基础设施；bandwidth limit，用户越多，表现越差。</p>
+<blockquote>
+<p>Our goal is to seek a protocol for the open, permissionless network wherein participating processors have no pre-established identities, and where the transaction throughput scales. <br />
+<em> 提出 </em>ELASTICO* 协议，容忍小于1/4的恶意节点
+* 划分网络为更小的委员会（committees），各自处理平行事务—一个碎片shard
+* 每个委员会包含足够少的节点，以运行经典拜占庭共识协议
+* 流程：处理器本地用公钥、IP地址、pow问题解答生成自己的身份，根据处理器的身份，自动将它们分配到委员会中；同一委员会中的处理器互相交流身份；委员会内部运行PBFT共识协议；final committee根据各个委员会的结果，计算最终结果；final committee生成随机数集，用于下一轮的pow问题</p>
+</blockquote>
+<hr />
+<p><strong>[2018] RapidChain: Scaling Blockchain via Full Sharding</strong><br />
+sharding-based区块链目前存在的问题：吞吐量、扩展性和延迟表现还可以进一步提升，安全性不够高。
+现存拜占庭协议用于成员固定的封闭环境，仅对静态敌手模型安全，不适于公有链。
+比特币存在的问题：低吞吐量，高延迟，低能效，挖矿中心化，节点完整备份。
+* 提出 <em>RapidChain</em>，容忍小于1/3的恶意节点
+* 将节点划分为委员会（committees），委员会处理平行事务，各自保存独立的账本
+* committee-election协议抽样出reference comittee，Cr
+* peer-discovery算法帮助同一委员会下的节点发现对方；内部路由协议对于事务tx，输出处理tx的委员会Cout
+* 跨区验证：同一委员会的节点将事务打包进区块，放进账本之前，要和input committees验证事务是否存在
+* 内部共识：选举一个local leader；leader通过一个fast gossiping protocol将区块发给成员；最后应用基于Ren的一个拜占庭共识协议达成共识
+* 每轮（epoch）结束之后，进入重置阶段，基于Cuckoo协议进行部分重新配置，重新生成成员名单和分配委员会
+* 参与下一轮的节点，需在限制时间内向Cr提交自己的公钥和pow问题的解答。</p>
+<hr />
+<h2 id="_3">数据存储</h2>
+<p><strong>Town Crier: An Authenticated Data Feed for Smart Contracts</strong></p>
+<h2 id="_4">协议</h2>
+<p><strong>[2018] Ouroboros Genesis: Composable Proof-of-Stake Blockchains with Dynamic Availability</strong></p>
+<blockquote>
+<p>We present a novel Proof-of-Stake (PoS) protocol, Ouroboros Genesis, that enables parties 
+to safely join (or rejoin) the protocol execution using only the genesis block 
+information.</p>
+</blockquote>
+<p>传统PoS协议，要求加入方获取一个可信的检查点区块（checkpoint block）/经常在线/可以获取一个在线节点数的准确估计。"bootstrap from genesis"是PoW相对于PoS的一个重要优势。
+* dynamic availability （如比特币面对拜占庭敌手仍然健壮，即使节点任意加入、离开或掉线），各方随时可能产生和加入网络；随时可能掉线/重新在线；随时可能失去/获取random oracle和计时功能。
+* 各方加入正在运行的区块链只需要创世区块的信息。
+* alert：在足够长的时间内保持正常。active：alert + adversarial。stalled parties：没有掉线，但是失去clock和random oracle同步。
+<img alt="协议示意图" src="imgs/ouro1.png" /></p>
+<hr />
+<p><strong>[2017] Algorand: Scaling Byzantine Agreements for Cryptocurrencies</strong>
+解决问题：在低延迟的情况下，保证交易的安全性。（比特币：使用pow，最长链合法。为了减少分叉问题，创建一个区块约10分钟，几个区块过后才能确认交易）
+* 交易延迟仅1分钟；所有用户（包括恶意节点），对已经确认的事务达成一致
+* <em>Verifiable Random Functions</em>： 以私密和非交互的方式，选择参与下一轮的用户
+* <em>BA⭐</em>：共识协议，选择提议阶段产生的区块中最具优先级且被一直认可的区块确定下来添加到区块链上。
+* 警惕女巫攻击（攻击者大量使用匿名身份）；扩展到百万数量级的用户；抵御dos攻击，用户掉线也能正常运行
+Techniques：
+* weighted users - 根据stake为每个用户分配权重。只要诚实用户掌握超过2/3的钱，则系统安全
+* consensus by committe - 随机选取一小撮成员组成委员会，执行协议的每一步
+* cryptographic sortition - 为了防止针对委员会的攻击，使用VRFs进行选取。每个用户用自己的私钥和公开信息进行运算，选中的成员获得一串证明自己委员会身份的字符串
+* participant replacement - 委员会每个成员只发言一次，每一步重新选举委员会</p>
+<hr />
+<h2 id="_5">其他</h2>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
